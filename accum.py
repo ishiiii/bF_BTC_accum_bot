@@ -20,7 +20,7 @@ def Line_Notify():
             symbol = 'BTC/JPY',
             type = 'market',
             side = 'buy',
-            amount = '98',
+            amount = '',#bFのBTC現物最小購入額は0.001なのでそれ以上を入力
             params = {'product_code' : 'BTC_JPY'})
     except:
         msg = 'BTCの現在価格は' + str(ticker['last']) + 'です。\n' + 'エラーが発生したため、BTCを購入できませんでした。' #エラーが返ってきた場合購入できていないのでこの文言を送信
